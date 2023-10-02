@@ -1,0 +1,78 @@
+.add-task {
+    text-align: center;
+}
+
+.add-task h2 {
+    text-align:center;
+}
+
+#add-task-form{
+    margin:20px;
+    padding:20px;
+}
+.form-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin:10px 0;
+    padding:0;
+}
+
+input[type="text"], input[type="date"], 
+textarea {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.radio-button-box {
+    display: inline-flex;
+    margin:0 3%;
+    padding:0;
+
+}
+
+input[type="radio"] {
+    margin:0;
+    margin-right: 10px;
+    padding:0;
+    cursor: pointer;
+}
+
+button {
+    color: white;
+    margin: 5px;
+    width: 6em;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #003b7a;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #002750;
+}
+
+button:focus {
+    background-color: #002750;
+}
+.added-task-h2{
+    text-align: center;
+}
+
+.added-task-box{
+    margin:20px;
+    padding: 20px;
+    background-color: #537daa;
+    border-radius: 5px;
+    text-align:center;
+    color:white;
+    align-items: center;
+    justify-items:center;
+}

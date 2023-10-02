@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Adicionar Tarefa - Gerenciador de Tarefas</title>
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/add-task.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Gerenciador de tarefas</h1>
+            <nav>
+                <ul id="nav-list">
+                    <li class="nav-list-item"><a href="index.html" class="nav-link">Página inicial</a></li>
+                    <li class="nav-list-item"><a href="task-list.html" class="nav-link">Lista de tarefas</a></li>
+                    <li class="nav-list-item"><a href="add-task.html" class="nav-link">Adicionar tarefa</a></li>
+                    <li class="nav-list-item"><a href="statistics.html" class="nav-link">Estatísticas</a></li>
+                    <li class="nav-list-item"><a href="profile.html" class="nav-link">Perfil</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="add-task">
+                <h2>Adicionar Nova Tarefa</h2>
+                <!-- <form id="add-task-form"> -->
+                <div id="add-task-form">
+                    <div class="form-group">
+                        <label for="task-name">Nome da Tarefa:</label>
+                        <input type="text" id="task-name" name="task-name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="due-date">Data de Vencimento:</label>
+                        <input type="date" id="due-date" name="due-date" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="priority">Prioridade:</label>
+                        <div class="radio-button-priority">
+                            <div class="radio-button-box">
+                                <input type="radio" name="priority" id="priority-low" value="low" />
+                                <label for="priority-low">Baixa</label>
+                            </div>
+                            <div class="radio-button-box">
+                                <input type="radio" name="priority" id="priority-medium" value="medium" />
+                                <label for="priority-medium">Média</label>
+                            </div>
+                            <div class="radio-button-box">
+                                <input type="radio" name="priority" id="priority=high" value="high" />
+                                <label for="priority-high">Alta</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Descrição:</label>
+                        <textarea id="description" name="description" rows="4"></textarea>
+                    </div>
+                    <button onclick="addTask()">Adicionar Tarefa</button>
+                </div>
+                <!-- </form> -->
+            </section>
+            <section id="added-task">
+                <!-- created tasks will be displayed here after submitting -->
+            </section>
+        </main>
+        <footer>&copy; 2023 Gerenciador de Tarefas</footer>
+
+        <script src="assets/js/add-task.js"></script>
+    </body>
+</html>

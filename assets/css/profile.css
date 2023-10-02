@@ -1,0 +1,39 @@
+.profile{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.profile h2{
+    text-align: center;
+}
+
+.profile-info{
+    text-align: center;
+}
+
+.profile-actions{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+button {
+    color: white;
+    margin: 5px;
+    width: 6em;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #003b7a;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #002750;
+}
+
+button:focus {
+    background-color: #002750;
+}
+

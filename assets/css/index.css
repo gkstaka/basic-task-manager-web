@@ -1,0 +1,35 @@
+.dashboard {
+    text-align: center;
+}
+
+.dashboard h2 {
+    margin-top: 0;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.summary-item {
+    background-color: #537daa;;
+    color: white;
+    margin:20px;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 20%;
+    justify-items: center;
+}
+
+.summary-item h3, .summary-item p{
+    text-align: center;
+}
+
+@media screen  and (orientation: portrait) {
+    .summary {
+        display: contents;
+        max-width: 50vw;
+    }
+}
