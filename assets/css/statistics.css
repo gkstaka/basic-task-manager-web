@@ -17,13 +17,18 @@
     background-color: #537daa;
     border-radius: 5px;
     width:50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
 
 }
 .stat-item h3{
     text-align: center;
+    margin-top: 0;
 }
 
-.stat-item p{
+.stat-item span{
     text-align: center;
 }
 

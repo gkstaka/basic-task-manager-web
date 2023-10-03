@@ -46,12 +46,16 @@ function addTask() {
             taskTitle.classList.add("added-task-h3");
             addedTaskBox.appendChild(taskTitle);
     
-            taskDate = document.createElement("p");
+            taskDate = document.createElement("span");
             taskDate.textContent = "Data de vencimento: " + inputDueDate.value;
             taskDate.classList.add("added-task-date");
             addedTaskBox.appendChild(taskDate);
-    
-            taskPriority = document.createElement("p");
+            
+            taskBreakLine = document.createElement("br");
+            addedTaskBox.appendChild(taskBreakLine);
+            addedTaskBox.appendChild(taskBreakLine);
+
+            taskPriority = document.createElement("span");
             taskPriority.textContent = "Prioridade: " + inputPriority;
             taskPriority.classList.add("added-task-priority");
             addedTaskBox.appendChild(taskPriority);
